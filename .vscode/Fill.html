@@ -1,0 +1,222 @@
+<html>
+<head>
+	<title>Form2</title>
+<style>
+	body{
+          background-color: #e6cbf8;
+          text-align: center;
+          height: 10px;
+        }
+        h4{
+          text-align: left;
+          height: 5px;
+        }
+        h3{
+          height: 5px;
+        }
+		.menu { 
+			background-color: blue; 
+			padding:10px 0px 10px 0px; 
+			color:white; 
+			overflow: hidden; 
+		} 
+		.menu a { font-weight:strong;
+			color: white; 
+			text-align: center; 
+			padding: 14px 16px; 
+			text-decoration: none; 
+			font-size: 20px; 
+		} 
+    .row a{
+      background-color: #04AA6D;
+  color: white;
+  padding: 6px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  float:center;
+    }
+		.menu a:hover{
+			background-color:yellow;
+			color:black;
+		}
+        input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+/* Style the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 6px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  float:center;
+}
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}  
+</style>
+</head>
+<link rel="stylesheet" href="action_page.php">
+<body>
+	<nav class="menu"> 
+		<a href="Fill.html" >FILL</a>
+    <a href="parking.html">PARKING</a>
+    <a href="food.html">FOOD</a>
+    <a href="tickets.html">TICKETS</a>
+    <a href="Software-Project.html">HOME</a>
+	</nav>
+	<div class="container">
+        <form action="action_page.php" method = "post">
+            <h1>Fill Up Details!</h1>
+          <div class="row">
+            <div class="col-25">
+              <label for="fname"> Name:</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="name" name="name" placeholder="Enter Full name">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="Number">Phone:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="phone" name="phone" placeholder="Phone Number">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="email">Email:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="Email" name="Email" placeholder="xyz@gmail.com">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="date">Date:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="Date" name="Date" placeholder="Enter Date">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">Session:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="Session" name="Session" placeholder="Morning/Afternoon/Evening/Night">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="time">Time:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="Time" name="Time" placeholder="Enter Time slot">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">Type:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="Type" name="Type" placeholder="Royal/Marvel/Executive/Buisness Class">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="Number">Quantity:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="Quantity" name="Quantity" placeholder="Quantity of tickets">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">Food:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="food" name="Food" placeholder="Food if any">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">Parking:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="parking" name="Parking" placeholder="Two wheeler/Four wheeler">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="number">Space:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="space" name="Space" placeholder="Enter No. of parking space you need">
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <a href="Payment.html">Submit</a>
+          </div>
+          <hr>
+          <h4>If you wish cancel You can do it here.</h4>
+          <h4>(You can cancel it within 2 days)</h4>
+          <h3>Do you want to cancel your tickets??</h3>
+        <div>
+          Cancel :            Yes<input type="Radio" name="save">
+            No <input type="Radio" name="Radiobutton"checked>
+      </div>
+      <div>
+        Sure :            Yes<input type="Radio" name="save">
+          No <input type="Radio" name="Radiobutton"checked>
+    </div>
+    <br>
+    <div class="Column">
+      <input type="submit" name="save" value="Submit">
+    </div>
+        </form>
+      </div>
+</body>
+</html>

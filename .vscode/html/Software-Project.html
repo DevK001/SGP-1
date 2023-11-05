@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema-booking</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<body>
+
+    <style>
+        body{
+            /* css reset */
+            color : white;
+            margin: 0px;
+            padding: 0px;
+            background: url("img/pexels-pavel.jpg");
+            
+        }
+        .left{
+            display: inline-block;
+           /* border: 2px solid red;*/
+            position: absolute;
+            left: 34px;
+            top: 20px;
+            background: url("img/Capture5.PNG");
+        }
+        .left img{
+            width: 129px;
+
+        }
+        .left div{
+            text-align:center;
+        }
+        .mid{
+            display: block;
+            width:33% ;
+            margin: 20px auto;
+            /*border: 2px solid blue;*/
+        }
+        .right{
+            position: absolute;
+            display: inline-block;
+            right: 34px;
+            top: 28px;
+        /* border: 2px solid gree*/;
+            
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 20px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+        .navbar li a:hover,.navbar li a.active{
+            color: blue;
+            text-decoration: underline;
+        }
+        .btn{
+            background: black;
+            color: white;
+            padding: 4px 14px;
+            margin: 0px 9px;
+        }
+    </style>
+<header class="header">
+    <div class = "left">
+        <img src="img/logo.PNG" alt="">
+        <div>
+            Movie Tickets
+        </div>
+    </div>
+    <div class="mid">
+       <ul class = "navbar">
+           <li><a href="https://google.com" >FILL</a></li>
+           <li><a href="https://google.com">PARKING</a></li>
+           <li><a href="https://google.com">FOOD</a></li>
+           <li><a href="https://google.com">TICKETS</a></li>
+       </ul>
+    </div>
+    <div class="right">
+      <button class="btn">Call us</button>
+      <button class="btn">Email us</button>
+    </div>
+</header>
+</body>
+</html>

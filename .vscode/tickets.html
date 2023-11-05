@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box Model</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #e6cbf8;
+            text-align: center;
+            height: 10px;
+        }
+        .menu { 
+			background-color: blue; 
+			padding:10px 0px 10px 0px; 
+			color:white; 
+			overflow: hidden; 
+		} 
+        .menu a { font-weight:strong;
+			color: white; 
+			text-align: center; 
+			padding: 14px 16px; 
+			text-decoration: none; 
+			font-size: 20px; 
+		} 
+        .menu a:hover{
+			background-color:yellow;
+			color:black;
+		}
+        .container{
+            background-color: rgb(231, 230, 241);
+            border: 3px solid rgb(64, 6, 119);
+            padding: 34px 19px;
+            margin: 14px 19px;
+            border-radius: 23px;
+            width: 294px;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+        }
+        .navbar {
+    background-color:green;
+    display: grid;
+    place-items: center;
+}
+    </style>
+</head>
+<body>
+    <nav class="menu"> 
+        <a href="Fill.html" >FILL</a>
+    <a href="parking.html">PARKING</a>
+    <a href="food.html">FOOD</a>
+    <a href="tickets.html">TICKETS</a>
+    <a href="Software-Project.html">HOME</a>
+	</nav>
+    <nav id = "navbar">
+        <br><br><br><br>
+        <h1>TIMINGS</h1>
+       <hr>
+    </nav>
+    <div class="container">
+        <h3>    3       </h3>
+        <h3>Morning</h3>
+        <p id="Third">Time: 9:00 To 11:30</p>
+        <h3>AM</h3>
+    </div>
+
+    <div class="container">
+        <h3>    3    </h3>
+        <h3>Morning</h3>
+        <p id="Third">Time: 9:00 To 11:30</p>
+        <h3>AM</h3>
+    </div>
+
+    <div class="container">
+        <h3>    3       </h3>
+        <h3>Morning</h3>
+        <p id="Third">Time: 9:00 To 11:30</p>
+        <h3>AM</h3>
+    </div>
+    <div class="container">
+        <h3>    3       </h3>
+        <h3>Morning</h3>
+        <p id="Third">Time: 9:00 To 11:30</p>
+        <h3>AM</h3>
+    </div>
+    <nav id = "navbar">
+        <br><br><br><br>
+        <h1>TICKETS</h1>
+       <hr>
+    </nav>
+    <div class="container">
+        <h3>    1       </h3>
+        <h3>ROYAL</h3>
+        <h3>tickets</h3>
+        <h5>Price:80 rs</h5>
+    </div>
+
+    <div class="container">
+        <h3>    2       </h3>
+        <h3>MARVEL</h3>
+        <h3>tickets</h3>
+        <h5>Price:100 rs</h5>
+    </div>
+
+    <div class="container">
+        <h3>    3       </h3>
+        <h3>EXECUTIVE</h3>
+        <h3>tickets</h3>
+        <h5>Price:120 rs</h5>
+    </div>
+    <div class="container">
+        <h3>    4       </h3>
+        <h3>BUISNESS</h3>
+        <h3>tickets</h3>
+        <h5>Price:150 rs</h5>
+    </div>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<html>
+<head>
+	<title>Form2</title>
+<style>
+	body{
+            background-color: #e6cbf8;
+            text-align: center;
+            height: 10px;
+        }
+		.menu { 
+			background-color: blue; 
+			padding:10px 0px 10px 0px; 
+			color:white; 
+			overflow: hidden; 
+		} 
+		.menu a { font-weight:strong;
+			color: white; 
+			text-align: center; 
+			padding: 14px 16px; 
+			text-decoration: none; 
+			font-size: 20px; 
+		} 
+		.menu a:hover{
+			background-color:yellow;
+			color:black;
+		}
+        input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+       
+</style>
+</head>
+<body>
+	
+	
+	<nav class="menu"> 
+		<a href="html/Form.html" >FILL</a>
+    <a href="parking.html">PARKING</a>
+    <a href="food.html">FOOD</a>
+    <a href="tickets.html">TICKETS</a>
+    <a href="Software-Project.html">HOME</a>
+	</nav>
+	<div class="container">
+        <form action="action_page.php">
+            <h1>Fill Up Details!</h1>
+          <div class="row">
+            <div class="col-25">
+              <label for="fname"> Name:</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname" placeholder="Enter Full name">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="country">Phone:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Phone Number">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Email:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="xyz@gmail.com">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Date:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Enter Date">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Session:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Morning/Afternoon/Evening/Night">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Time:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Enter Time slot">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Type:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Royal/Marvel/Executive/Buisness Class">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Quantity:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Quantity of tickets">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Food:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Food if any">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Parking:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Two wheeler/Four wheeler">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Space:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Enter No. of parking space you need">
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+</body>
+</html>
